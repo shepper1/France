@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte du voyage - France</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    #map { height: 100vh; width: 100%; }
+    .info-window {
+      max-width: 250px;
+      font-family: Arial, sans-serif;
+    }
+    .info-window img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .info-window h3 {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    .info-window p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+    .info-window a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .info-window a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  
+  <script>
+    function initMap() {
+      const center = { lat: 43.7135083875, lng: 5.91583365 };
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: center
+      });
+      
+      const markers = [{"lat":43.9486986,"lng":4.8059401,"name":"Avignon","jour":1,"titre":"Arrivée en Avignon","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.9486986,4.8059401&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.9486986,4.8059401","aiImageUrl":"jour1.jpg"},{"lat":43.9315301,"lng":4.824249,"name":"Luberon (depuis Avignon)","jour":3,"titre":"Trésors du Luberon","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.9315301,4.824249&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.9315301,4.824249","aiImageUrl":"jour3.jpg"},{"lat":43.9322367,"lng":4.8226925,"name":"Alpilles (depuis Avignon)","jour":4,"titre":"Sur les Traces de Van Gogh","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.9322367,4.8226925&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.9322367,4.8226925","aiImageUrl":"jour4.jpg"},{"lat":43.5323032,"lng":5.4509692,"name":"Aix-en-Provence","jour":5,"titre":"Élégance d'Aix-en-Provence","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.5323032,5.4509692&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.5323032,5.4509692","aiImageUrl":"jour5.jpg"},{"lat":43.215134,"lng":5.53712,"name":"Cassis (depuis Aix)","jour":6,"titre":"Les Calanques de Cassis","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.215134,5.53712&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.215134,5.53712","aiImageUrl":"jour6.jpg"},{"lat":43.7101728,"lng":7.261953200000001,"name":"Nice","jour":7,"titre":"Arrivée sur la Côte d'Azur","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.7101728,7.261953200000001&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.7101728,7.261953200000001","aiImageUrl":"jour7.jpg"},{"lat":43.7278189,"lng":7.361791999999999,"name":"Èze (depuis Nice)","jour":9,"titre":"Nid d'Aigle à Èze","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.7278189,7.361791999999999&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.7278189,7.361791999999999","aiImageUrl":"jour9.jpg"},{"lat":43.7101728,"lng":7.261953200000001,"name":"Nice / Paris","jour":10,"titre":"Fin du Voyage","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=43.7101728,7.261953200000001&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=43.7101728,7.261953200000001","aiImageUrl":"jour10.jpg"}];
+      
+      markers.forEach((markerData) => {
+        const marker = new google.maps.Marker({
+          position: { lat: markerData.lat, lng: markerData.lng },
+          map: map,
+          title: markerData.name,
+          label: String(markerData.jour)
+        });
+        
+        const contentString = `
+          <div class="info-window">
+            <img src="${markerData.streetViewUrl}" alt="Street View de ${markerData.name}" />
+            <h3>Jour ${markerData.jour}</h3>
+            <p><strong>${markerData.name}</strong></p>
+            <p><a href="${markerData.streetViewLinkUrl}" target="_blank" rel="noopener noreferrer"><strong>${markerData.titre}</strong></a></p>
+          </div>
+        `;
+        
+        const infoWindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        marker.addListener('click', () => {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q&callback=initMap">
+  </script>
+</body>
+</html>
