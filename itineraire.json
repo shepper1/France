@@ -1,0 +1,256 @@
+{
+  "pays": "France",
+  "drapeau": "🇫🇷",
+  "symbole": "🍷",
+  "titre": "Échappée Belle en Provence et sur la Côte d'Azur",
+  "budget": "1800€",
+  "duree": "10 jours",
+  "temps_vol": "0h (Départ de Paris)",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🚆",
+      "titre": "Arrivée en Avignon",
+      "legende": "Départ de Paris en TGV pour rejoindre la cité papale. Une première journée douce pour s'imprégner de l'atmosphère provençale avec une balade au crépuscule.",
+      "lieu": "Avignon",
+      "activites": [
+        "🚆 Trajet Paris - Avignon en TGV (environ 2h40)",
+        "🛏️ Installation à l'hôtel",
+        "🌉 Balade découverte sur le Pont d'Avignon"
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "🎟️",
+          "titre": "Astuce TGV",
+          "texte": "Réservez vos billets de TGV plusieurs semaines à l'avance sur SNCF Connect pour obtenir les meilleurs tarifs."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏰",
+      "titre": "Le Cœur Historique d'Avignon",
+      "legende": "Plongez dans l'histoire fascinante d'Avignon en visitant l'imposant Palais des Papes et en vous perdant dans les ruelles médiévales du centre-ville.",
+      "lieu": "Avignon",
+      "activites": [
+        "🏛️ Visite du Palais des Papes",
+        "🍽️ Déjeuner sur la Place de l'Horloge",
+        "🎭 Exploration du centre historique et du Rocher des Doms"
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Bon Plan",
+          "texte": "Le billet couplé Palais des Papes + Pont d'Avignon offre une petite réduction."
+        },
+        {
+          "symbole": "👟",
+          "titre": "Conseil",
+          "texte": "Portez de bonnes chaussures, le centre historique est pavé et le Palais immense."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🚗",
+      "titre": "Trésors du Luberon",
+      "legende": "Journée d'excursion en voiture à la découverte de deux des plus beaux villages de France, entre falaises d'ocre et constructions en pierre sèche.",
+      "lieu": "Luberon (depuis Avignon)",
+      "activites": [
+        "🚗 Prise en main de la voiture de location",
+        "🏘️ Visite du village perché de Gordes",
+        "🎨 Balade sur le sentier des ocres à Roussillon"
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "📷",
+          "titre": "Spot Photo",
+          "texte": "Le point de vue sur Gordes depuis la route en arrivant est incontournable."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🎨",
+      "titre": "Sur les Traces de Van Gogh",
+      "legende": "Explorez les paysages des Alpilles qui ont tant inspiré Vincent Van Gogh, entre le charmant village de Saint-Rémy et la spectaculaire forteresse des Baux.",
+      "lieu": "Alpilles (depuis Avignon)",
+      "activites": [
+        "🖼️ Promenade à Saint-Rémy-de-Provence",
+        "✨ Visite des Carrières des Lumières aux Baux-de-Provence"
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "À savoir",
+          "texte": "Réservez vos billets pour les Carrières des Lumières en ligne pour éviter les longues files d'attente."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "⛲",
+      "titre": "Élégance d'Aix-en-Provence",
+      "legende": "Changement de décor pour la ville d'Aix-en-Provence. Flânez sur le célèbre Cours Mirabeau et découvrez l'univers de l'enfant du pays, Paul Cézanne.",
+      "lieu": "Aix-en-Provence",
+      "activites": [
+        "🚆 Trajet Avignon - Aix-en-Provence",
+        "🚶‍♂️ Flânerie sur le Cours Mirabeau et dans le Vieil Aix",
+        "🎨 Visite de l'Atelier de Cézanne"
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "💧",
+          "titre": "Le Saviez-vous ?",
+          "texte": "Aix est surnommée la 'ville aux mille fontaines'. Amusez-vous à les découvrir au gré de vos balades."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🚤",
+      "titre": "Les Calanques de Cassis",
+      "legende": "Une journée spectaculaire entre mer turquoise et falaises de calcaire. Découvrez ce joyau naturel par la mer ou par les sentiers de randonnée.",
+      "lieu": "Cassis (depuis Aix)",
+      "activites": [
+        "🚌 Trajet vers le port de Cassis",
+        "🏞️ Randonnée ou excursion en bateau dans les Calanques"
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🔥",
+          "titre": "Attention",
+          "texte": "En été, l'accès aux massifs des Calanques peut être réglementé ou interdit en raison des risques d'incendie. Vérifiez les conditions avant de partir."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏖️",
+      "titre": "Arrivée sur la Côte d'Azur",
+      "legende": "Direction la capitale de la Riviera ! Après le trajet en train, une première balade sur l'iconique Promenade des Anglais s'impose pour sentir l'air marin.",
+      "lieu": "Nice",
+      "activites": [
+        "🚆 Trajet Aix-en-Provence - Nice",
+        "🏨 Installation à l'hôtel",
+        "🌅 Balade sur la Promenade des Anglais"
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "💺",
+          "titre": "Conseil Train",
+          "texte": "Lors de la réservation, choisissez un siège côté droit dans le sens de la marche pour profiter des meilleures vues sur la mer."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🌺",
+      "titre": "Couleurs de Nice",
+      "legende": "Découvrez les multiples facettes de Nice, de l'effervescence de son marché coloré à la quiétude de ses musées, le tout surplombé par un panorama exceptionnel.",
+      "lieu": "Nice",
+      "activites": [
+        "💐 Visite du marché aux fleurs du Cours Saleya",
+        "🏰 Montée à la Colline du Château pour la vue panoramique",
+        "🎨 Visite du Musée Matisse ou Chagall"
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "😋",
+          "titre": "Spécialité Locale",
+          "texte": "Goûtez à la Socca, une grande galette de farine de pois chiches, une spécialité niçoise à déguster sur le pouce."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🦅",
+      "titre": "Nid d'Aigle à Èze",
+      "legende": "Excursion dans l'arrière-pays pour visiter l'un des plus beaux villages perchés de la Côte d'Azur, offrant des vues à couper le souffle sur la Méditerranée.",
+      "lieu": "Èze (depuis Nice)",
+      "activites": [
+        "🚌 Excursion au village médiéval d'Èze",
+        "🌵 Visite du Jardin Exotique au sommet du village"
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🚌",
+          "titre": "Transport",
+          "texte": "Le bus 82 ou 112 depuis Nice est une option économique pour se rendre à Èze. Le trajet offre de superbes panoramas."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🛍️",
+      "titre": "Fin du Voyage",
+      "legende": "Profitez d'une dernière matinée pour flâner dans les ruelles du Vieux-Nice et acheter quelques souvenirs avant de prendre le train du retour pour Paris.",
+      "lieu": "Nice / Paris",
+      "activites": [
+        "🛍️ Derniers achats dans le Vieux-Nice",
+        "🚆 Retour à Paris en TGV"
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Alternative",
+          "texte": "L'aéroport de Nice offre de nombreux vols vers Paris. C'est une option plus rapide que le train pour le retour."
+        }
+      ]
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de mai-juin et septembre.",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Le TGV est idéal pour Paris-Avignon. Une voiture de location est quasi indispensable pour explorer le Luberon et les Alpilles.",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Le budget est une estimation pour une personne (base chambre double) et peut varier selon le niveau de confort et les restaurants choisis.",
+      "symbole": "💶"
+    },
+    {
+      "titre": "Réservez TGV, hébergements et voiture bien à l'avance, surtout au printemps et en été, pour garantir la disponibilité et les meilleurs prix.",
+      "symbole": "🎟️"
+    },
+    {
+      "titre": "Le climat est ensoleillé. Emportez crème solaire, chapeau, lunettes de soleil et des chaussures de marche confortables.",
+      "symbole": "🕶️"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Réservation des trains",
+      "titre": "SNCF Connect",
+      "url": "https://www.sncf-connect.com/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Inspiration pour votre voyage",
+      "titre": "Tourisme Provence-Alpes-Côte d'Azur",
+      "url": "https://provence-alpes-cotedazur.com/",
+      "symbole": "🏞️"
+    },
+    {
+      "legende": "Prévisions météo locales",
+      "titre": "Météo France",
+      "url": "https://meteofrance.com/",
+      "symbole": "🌤️"
+    }
+  ]
+}
